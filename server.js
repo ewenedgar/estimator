@@ -1,5 +1,7 @@
+require('dotenv').config();
 const express = require('express');
 const    app = express();
+
 
     port = process.env.Port || 3000;
 const morgan = require('morgan');
@@ -28,6 +30,9 @@ app.use(morgan('tiny', { stream: accessLogStream }, {
 var routes = require('./api/routes/covidRoutes');
 routes(app);
 
+app.get('/', (req, res)=>{
+    res.send('browse to api/v1/on-covid-19');
+});
 app._router.stack.forEach(function (r) {
     if (r.route && r.route.path) {
         console.log(r.route.path);
@@ -35,4 +40,4 @@ app._router.stack.forEach(function (r) {
 });
  app.listen(port);
 
-console.log('simple rest api started on: ' + port);
+// console.log('simple rest api started on: ' + port);

@@ -64,3 +64,10 @@ GET /api/v1/on-covid-19/logs 200 2562 - 4.116 ms
 GET /api/v1/on-covid-19/logs 200 2613 - 0.459 ms
 GET /api/v1/on-covid-19/ 200 4465 - 65.279 ms
 GET /api/v1/on-covid-19/xml 200 406 - 30.388 ms
+GET / 200 28 - 2.116 ms
+GET / 304 - - 4.481 ms
+GET / 304 - - 0.346 ms
+GET / 304 - - 0.381 ms
+GET / 304 - - 0.820 ms
+GET / 304 - - 0.292 ms
+GET / 304 - - 0.223 ms
