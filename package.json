@@ -1,0 +1,30 @@
+{
+  "name": "y",
+  "version": "1.0.0",
+  "description": "simple rest",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \\\"Error: no test specifie\\\" && exit 1\"",
+    "start": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "y"
+  },
+  "keywords": [
+    "rest"
+  ],
+  "author": "edgar ewen",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^2.0.3"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-handlebars": "^4.0.3",
+    "mongoose": "^5.9.7",
+    "morgan": "^1.10.0",
+    "n-readlines": "^1.0.0",
+    "xml-js": "^1.6.11"
+  }
+}
